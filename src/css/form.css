@@ -1,0 +1,26 @@
+/* form */
+
+.feedback-form{
+    display: flex;
+    flex-direction: column;
+    padding: 3px;
+    width: 350px;
+    border: 1px solid #ccc;
+}
+
+.feedback-form label{
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(69, 69, 156);
+    /* margin: 5px; */
+    padding: 5px;
+}
+.feedback-form label input{
+    background-color: rgb(160, 167, 121);
+    width: 220px
+}
+.feedback-form label textarea{
+    background-color: rgb(122, 201, 118);
+    width: 220px;
+    height: 100px;
+}
