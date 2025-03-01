@@ -30,20 +30,21 @@ formEmail.addEventListener('input', (e) => {
 
 form.addEventListener('submit', (e) => {
     e.preventDefault();
-    console.log(formData.email);
-    console.log(formData.message);
+    // console.log(formData.email);
+    // console.log(formData.message);
     if (formData.email && formData.message) {
+        console.log(formData);
+        form.reset();
+        localStorage.removeItem(KEY);
+        formData.email = '';
+        formData.message = '';
         console.log(formData);
     } 
     else {
         alert('Fill please all fields');
     }
-    localStorage.removeItem(KEY);
-
+    
 });
-
-
-// localStorage.getItem("feedback-form-state");
 
 function onFormSubmit() {
     if (localStorage.getItem(KEY)) {
@@ -53,8 +54,5 @@ function onFormSubmit() {
         formEmail.value = savedData.email;
     }
 }
-console.log(formData);
-console.log(formData);
-
 
 // console.log(!!(formData.email && formData.message))
