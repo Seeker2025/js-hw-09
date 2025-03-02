@@ -1,0 +1,1 @@
+.feedback-form{display:flex;flex-direction:column;padding:3px;width:350px;border:1px solid #b33636}.feedback-form label{display:flex;justify-content:space-between;background-color:#2e2e6d;padding:5px}.feedback-form label input{background-color:#b1ad3a;width:220px}.feedback-form label textarea{background-color:#3688cb;width:220px;height:100px}
