@@ -35,3 +35,17 @@ function populateForm03() {
         form03.elements.message.value = savedMessage.message;
     }
 }
+
+
+
+const date = new Date();
+console.log(date);
+
+Math.random();
+console.log(Math.random() < .5);
+
+const now = Date.now();
+console.log(now);
+
+const day = date.getDate();
+console.log(day);
